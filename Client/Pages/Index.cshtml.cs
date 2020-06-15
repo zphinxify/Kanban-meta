@@ -21,5 +21,8 @@ namespace Client.Pages
         {
 
         }
+        public void OnPost(string description){
+            Console.WriteLine(description);
+        }
     }
 }
