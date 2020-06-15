@@ -34,5 +34,26 @@ namespace Meta.Api.Controllers {
 
             return CreatedAtAction(nameof(GetCard), new { id = card.Id}, card);
         }
+
+        [HttpPut("editCard/{id}")]
+        public async Task<ActionResult<Card>> EditCard(int id, Card newCard) {
+            Card oldCard = await _context.Cards.FindAsync(id);
+
+            oldCard = newCard;
+
+            await _context.SaveChangesAsync();
+
+            return await GetCard(id);
+        }
+
+        [HttpDelete("removeCard/{id}")]
+        public async Task<ActionResult<Card>> RemoveCard(int id) {
+            Card card = await _context.Cards.FindAsync(id);
+
+            _context.Cards.Remove(card);
+            await _context.SaveChangesAsync();
+
+            return card;
+        }
     }
 }
