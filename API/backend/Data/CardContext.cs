@@ -10,6 +10,6 @@ namespace Meta.Api.Data
         {
         }
 
-        public DbSet<Meta.Api.Models.Card> Movie { get; set; }
+        public DbSet<Meta.Api.Models.Card> Cards { get; set; }
     }
 }
