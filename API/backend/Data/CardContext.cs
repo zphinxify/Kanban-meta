@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using Meta.Api.Models;
+
 
 namespace Meta.Api.Data
 {
@@ -10,6 +12,11 @@ namespace Meta.Api.Data
         {
         }
 
-        public DbSet<Meta.Api.Models.Card> Cards { get; set; }
+        public DbSet<Card> Cards { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Card>().ToTable("Card");
+        }
     }
 }
