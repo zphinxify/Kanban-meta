@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Client.Models;
 
-namespace Client.Models {
+namespace Client.Data {
     public class KanbanContext : DbContext {
         public KanbanContext(DbContextOptions<KanbanContext> options) : base(options) {
 

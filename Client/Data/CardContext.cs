@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Meta.Api.Models;
+using Client.Models;
 
 
-namespace Meta.Api.Data
+namespace Client.Data
 {
     public class CardContext : DbContext
     {
