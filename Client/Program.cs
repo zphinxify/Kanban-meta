@@ -36,7 +36,7 @@ namespace Client
 
                 try
                 {
-                    var context = services.GetRequiredService<CardContext>();
+                    var context = services.GetRequiredService<KanbanContext>();
                     context.Database.EnsureCreated();
                 }
                 catch (Exception ex)
