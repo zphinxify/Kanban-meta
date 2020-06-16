@@ -25,7 +25,7 @@ namespace Client
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddDbContext<CardContext>(options =>
+            services.AddDbContext<KanbanContext>(options =>
             options.UseSqlite(Configuration.GetConnectionString("CardContext")));
         }
 
