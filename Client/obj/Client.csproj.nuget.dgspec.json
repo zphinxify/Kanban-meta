@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Client.csproj": {}
+    "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Client.csproj": {
+    "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\obj\\",
+        "projectPath": "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj",
+        "packagesPath": "C:\\Users\\joaki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +40,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
