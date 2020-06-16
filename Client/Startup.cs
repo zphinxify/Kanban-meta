@@ -26,7 +26,7 @@ namespace Client
         {
             services.AddRazorPages();
             services.AddDbContext<KanbanContext>(options =>
-            options.UseSqlite(Configuration.GetConnectionString("CardContext")));
+            options.UseSqlite(Configuration.GetConnectionString("KanbanContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
