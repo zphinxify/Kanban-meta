@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\client\\Client.csproj": {}
   },
   "projects": {
@@ -12,9 +13,30 @@
         "projectPath": "C:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\client\\Client.csproj",
         "packagesPath": "C:\\Users\\el_su\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\client\\obj\\",
+=======
+    "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj",
+        "projectName": "Client",
+        "projectPath": "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\Client.csproj",
+        "packagesPath": "C:\\Users\\joaki\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joaki\\Desktop\\Kodarkiv\\aids\\Kanban-meta\\client\\obj\\",
+>>>>>>> 24db6fb9132d017468afb0387810966bcca974ba
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\el_su\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+          "C:\\Users\\joaki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 24db6fb9132d017468afb0387810966bcca974ba
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -39,6 +61,13 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
+<<<<<<< HEAD
+=======
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[*, )"
+>>>>>>> 24db6fb9132d017468afb0387810966bcca974ba
             }
           },
           "imports": [
@@ -59,7 +88,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+>>>>>>> 24db6fb9132d017468afb0387810966bcca974ba
         }
       }
     }
