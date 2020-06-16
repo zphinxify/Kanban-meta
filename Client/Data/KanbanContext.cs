@@ -1,22 +1,25 @@
 using Microsoft.EntityFrameworkCore;
-using Meta.Api.Models;
+using Client.Models;
 
 
-namespace Meta.Api.Data
+namespace Client.Data
 {
-    public class CardContext : DbContext
+    public class KanbanContext : DbContext
     {
-        public CardContext (
-            DbContextOptions<CardContext> options)
+        public KanbanContext (
+            DbContextOptions<KanbanContext> options)
             : base(options)
         {
         }
 
         public DbSet<Card> Cards { get; set; }
+        public DbSet<Column> Columns { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Card>().ToTable("Card");
+            modelBuilder.Entity<Column>().ToTable("Column");
         }
     }
 }
