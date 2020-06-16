@@ -12,23 +12,27 @@
 <div class="row">
 <div class="backlog" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1">
 <header> Backlog</header>
-
+<ul>
     <li>
-<div class="card" draggable="true" ondragstart="drag(event)" id="drag1">item 1<span class="close">x</span>
+<div class="card" draggable="true" ondragstart="drag(event)" id="drag1">item 1<span class="close" onclick="removeDiv(this);">x</span>
     </li>
-
+</ul>
 
     </div>
 <div class="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
     <header> In progress</header>
-     
+     <ul>
     <li>
-    <div class="card" draggable="true" ondragstart="drag(event)" id="drag2">item 3<span class="close">x</span>
+    <div class="card" draggable="true" ondragstart="drag(event)" id="drag2">item 3<span class="close"  onclick="removeDiv(this);">x</span>
      </li>
-
+</ul>
     </div>
 <div class="done" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3">
     <header> Done</header>
+    <ul>
+        <li>
+            </li>
+            </ul>
     </div>
     </div>
     </p>
@@ -49,4 +53,7 @@ function drop(ev) {
     var data = event.dataTransfer.getData("text");
     event.target.appendChild(document.getElementById(data));
 }
+function removeDiv(btn){
+            ((btn.parentNode).parentNode).removeChild(btn.parentNode);
+        }
 </script>
