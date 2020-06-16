@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Client.csproj",
+  "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Client.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,38 +20521,38 @@
   "RootNamespace": "Client",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\el_su\\OneDrive\\Dokument\\Webbutveckling_grupp4\\Kanban-meta\\Client\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Admin\\Desktop\\Meta\\Client\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
