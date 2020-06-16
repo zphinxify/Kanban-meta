@@ -98,6 +98,7 @@ body {
   border-right-style: solid;
 }
 .card{
+  text-decoration: none;
   text-align: center;
   width: 90%;
   margin: auto;
@@ -105,12 +106,13 @@ body {
 .close {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  right: 0%;
+  top: 33%;
+  right: 01em;
   padding: 12px 16px;
   transform: translate(0%, -50%);
 }
 ul {
+  text-decoration: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -118,12 +120,12 @@ ul {
 
 /* Style the list items */
 ul li {
-  border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
-  padding: 12px;
+  
+  margin: auto; /* Prevent double borders */
+  /*background-color: #f6f6f6;*/
+  
   text-decoration: none;
-  font-size: 18px;
+  
   color: black;
   display: block;
   position: relative;
@@ -131,7 +133,9 @@ ul li {
 
 /* Add a light grey background color on hover */
 ul li:hover {
-  background-color: #eee;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:green;
 }
 
-.close:hover {background: #bbb;}
+
