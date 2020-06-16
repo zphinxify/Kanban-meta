@@ -13,5 +13,10 @@ namespace Meta.Api.Data
         }
 
         public DbSet<Card> Cards { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Card>().ToTable("Card");
+        }
     }
 }
