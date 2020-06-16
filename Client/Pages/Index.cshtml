@@ -10,19 +10,24 @@
     <p>
 
 <div class="row">
-<div class="backlog">
+<div class="backlog" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1">
 <header> Backlog</header>
-<li>
-    <ul>
-<div class="card">item 1<span class="close">x</span></div>
+<ul>    
+    <li>
+<div class="card" draggable="true" ondragstart="drag(event)" id="drag1">item 1<span class="close">x</span>
+    </li>
+</ul>
 
-    </ul>
-</li>
     </div>
-<div class="inprogress">
+<div class="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
     <header> In progress</header>
+    <ul>    
+    <li>
+    <div class="card" draggable="true" ondragstart="drag(event)" id="drag2">item 3<span class="close">x</span>
+     </li>
+</ul>
     </div>
-    <div class="done">
+<div class="done" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3">
     <header> Done</header>
     </div>
     </div>
@@ -32,3 +37,48 @@
         
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h3 draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="60">Kort 2</h3></th>
+            <th>
+                <h3 draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="60">Kort 1</h3></th>
+    </table>
+    
+        <img src="bild.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="60">
+</div>
+
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h3 draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="60">Kort 3</h3>
+                </th>
+    
+    </table>
+    
+        <img src="bild.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="50" height="60">
+</div>
+
+
+<script>
+function allowDrop(ev) {
+    event.preventDefault();
+}
+
+function drag(ev) {
+    event.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text");
+    event.target.appendChild(document.getElementById(data));
+}
+</script>
