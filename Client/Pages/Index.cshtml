@@ -9,6 +9,27 @@
     </form>
     <p>
 
+<form method="GET">
+
+@foreach (Models.Column column in Model.columns)
+{
+    <div class="row">
+        <div class="backlog" ondrop="drop(event)" ondragover="allowDrop(event)" id="@column.ID">
+        <header>@column.Name</header>
+    @foreach (Models.Card card in column.Cards)
+    {
+    <ul>
+        <li>
+            <div class="card" draggable="true" ondragstart="drag(event)" id="@card.ID">@card.Name<span class="close" onclick="removeDiv(this);">x</span>
+        </li>
+    </ul>
+    }
+    </div></div>
+}
+
+
+
+
 <div class="row">
 <div class="backlog" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1">
 <header> Backlog</header>
@@ -17,8 +38,6 @@
 <div class="card" draggable="true" ondragstart="drag(event)" id="drag1">item 1<span class="close" onclick="removeDiv(this);">x</span>
     </li>
 </ul>
-
-    </div>
 <div class="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
     <header> In progress</header>
      <ul>
@@ -26,16 +45,15 @@
     <div class="card" draggable="true" ondragstart="drag(event)" id="drag2">item 3<span class="close"  onclick="removeDiv(this);">x</span>
      </li>
 </ul>
-    </div>
+
 <div class="done" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3">
     <header> Done</header>
     <ul>
         <li>
             </li>
             </ul>
-    </div>
-    </div>
-    </p>
+</form>
+</p>
 
 
 
