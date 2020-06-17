@@ -14,6 +14,10 @@ namespace Client.Models {
         //     return _context.Columns;
         // }
 
+        public IEnumerable<Card> GetCards() {
+            return _context.Cards;
+        }
+
         public Card AddCard(Card cardToAdd) {
             _context.Add(cardToAdd);
             _context.SaveChanges();

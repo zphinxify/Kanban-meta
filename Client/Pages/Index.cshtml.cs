@@ -28,7 +28,7 @@ namespace Client.Pages
         public void OnPost(string description){
             var newCard = new Card();
             newCard.Name = description;
-            newCard.Description = "Majs";
+            // newCard.Description = "Majs";
             newCard.IsCompleted = false;
             _repo.AddCard(newCard);
         }
