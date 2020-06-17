@@ -14,7 +14,7 @@ namespace Client.Pages
     {
         private KanbanRepository _repo;
         private readonly ILogger<IndexModel> _logger;
-        List<Card> cards = new List<Card>();
+        public List<Card> Cards { get; set; } = new List<Card>();
 
         public IndexModel(ILogger<IndexModel> logger, KanbanRepository repository)
         {

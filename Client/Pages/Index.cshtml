@@ -14,7 +14,7 @@
 <div class="row">
     <div class="backlog" ondrop="drop(event)" ondragover="allowDrop(event)" id="div1">
     <header>backlog</header>
-    @foreach (Models.Card card in Model.cards)
+    @foreach (Models.Card card in Model.Cards)
     {
 
         @if (card.ColumnID == 1)
@@ -30,7 +30,7 @@
     
     <div class="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)" id="div2">
     <header>Inprogress</header>
-    @foreach (Models.Card card in Model.cards)
+    @foreach (Models.Card card in Model.Cards)
     {
 
         @if (card.ColumnID == 2)
@@ -46,7 +46,7 @@
 
     <div class="done" ondrop="drop(event)" ondragover="allowDrop(event)" id="div3">
     <header>Done</header>
-    @foreach (Models.Card card in Model.cards)
+    @foreach (Models.Card card in Model.Cards)
     {
 
         @if (card.ColumnID == 3)
