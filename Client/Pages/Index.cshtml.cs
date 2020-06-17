@@ -23,7 +23,7 @@ namespace Client.Pages
         }
         public void OnGet()
         {
-            //cards = _repo.GetColumns();
+            Cards = _repo.GetCards().ToList();
         }
         
         public void OnPost(string description){
