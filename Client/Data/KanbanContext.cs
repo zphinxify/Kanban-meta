@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Client.Models;
 
 
@@ -13,13 +13,13 @@ namespace Client.Data
         }
 
         public DbSet<Card> Cards { get; set; }
-        public DbSet<Column> Columns { get; set; }
+     // public DbSet<Column> Columns { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Card>().ToTable("Card");
-            modelBuilder.Entity<Column>().ToTable("Column");
+            // modelBuilder.Entity<Column>().ToTable("Column");
         }
     }
 }

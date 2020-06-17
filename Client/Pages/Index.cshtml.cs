@@ -22,7 +22,7 @@ namespace Client.Pages
         }
         public void OnGet()
         {
-            _repo.GetColumns();
+            // _repo.GetColumns();
         }
         
         public void OnPost(string description){
