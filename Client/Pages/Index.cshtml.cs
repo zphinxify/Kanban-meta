@@ -12,16 +12,17 @@ namespace Client.Pages
 {
     public class IndexModel : PageModel
     {
-        KanbanRepository repo;
+        private KanbanRepository _repo;
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ILogger<IndexModel> logger, KanbanRepository repository)
         {
             _logger = logger;
+            _repo = repository;
         }
         public void OnGet()
         {
-            //repo.GetColumns();
+            // _repo.GetColumns();
         }
         
         public void OnPost(string description){
@@ -29,11 +30,11 @@ namespace Client.Pages
             newCard.Name = description;
             newCard.Description = "Majs";
             newCard.IsCompleted = false;
-            //repo.AddCard(newCard);
+            _repo.AddCard(newCard);
         }
         public void OnDelete(int ID)
         {
-            //repo.RemoveCard(ID);
+            _repo.RemoveCard(ID);
         }
         public void OnPut(int ID, string name)
         {
@@ -41,7 +42,7 @@ namespace Client.Pages
             updateCard.ID = ID;
             updateCard.Name = name;
             updateCard.IsCompleted = false;
-            //repo.UpdateCard(updateCard);
+            _repo.UpdateCard(updateCard);
         }
     }
 }
