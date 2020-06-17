@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Client.Data;
 using Microsoft.EntityFrameworkCore;
+using Client.Models;
+
 namespace Client
 {
     public class Startup
@@ -26,7 +28,9 @@ namespace Client
         {
             services.AddRazorPages();
             services.AddDbContext<KanbanContext>(options =>
-            options.UseSqlite(Configuration.GetConnectionString("KanbanContext")));
+                options.UseSqlite(Configuration.GetConnectionString("KanbanContext")));
+
+            services.AddRepository();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +58,13 @@ namespace Client
             {
                 endpoints.MapRazorPages();
             });
+        }
+    }
+
+    static class ServiceRepositoryAdditions {
+        public static void AddRepository(this IServiceCollection service) {
+            
+            service.AddScoped(typeof(KanbanRepository), typeof(KanbanRepository));
         }
     }
 }
