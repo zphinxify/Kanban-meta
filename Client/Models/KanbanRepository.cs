@@ -10,9 +10,9 @@ namespace Client.Models {
             _context = context;
         }
 
-        public IEnumerable<Column> GetColumns() {
-            return _context.Columns;
-        }
+        // public IEnumerable<Column> GetColumns() {
+        //     return _context.Columns;
+        // }
 
         public Card AddCard(Card cardToAdd) {
             _context.Add(cardToAdd);
