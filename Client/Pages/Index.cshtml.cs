@@ -14,6 +14,7 @@ namespace Client.Pages
     {
         private KanbanRepository _repo;
         private readonly ILogger<IndexModel> _logger;
+        List<Card> cards = new List<Card>();
 
         public IndexModel(ILogger<IndexModel> logger, KanbanRepository repository)
         {
@@ -22,13 +23,13 @@ namespace Client.Pages
         }
         public void OnGet()
         {
-            // _repo.GetColumns();
+            //cards = _repo.GetColumns();
         }
         
         public void OnPost(string description){
             var newCard = new Card();
             newCard.Name = description;
-            // newCard.Description = "Majs";
+            newCard.ColumnID = 1;
             newCard.IsCompleted = false;
             _repo.AddCard(newCard);
         }
@@ -39,7 +40,7 @@ namespace Client.Pages
         public void OnPut(int ID, string name)
         {
             var updateCard = new Card();
-            updateCard.ID = ID;
+            updateCard.ID += ID;
             updateCard.Name = name;
             updateCard.IsCompleted = false;
             _repo.UpdateCard(updateCard);
