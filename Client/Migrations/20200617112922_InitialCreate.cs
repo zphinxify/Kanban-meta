@@ -13,7 +13,7 @@ namespace Client.Migrations
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(nullable: true),
-                    Description = table.Column<string>(nullable: true),
+                    ColumnID = table.Column<int>(nullable: false),
                     IsCompleted = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
